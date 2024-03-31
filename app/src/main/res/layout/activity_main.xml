@@ -6,46 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back_button"
+        android:layout_marginTop="10dp"
+        />
 
     <TextView
-        android:id="@+id/time_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@{formattedDate}"
-        android:textColor="@color/black"
-        />
-
-    <ImageView
-        android:id="@+id/Icons_1_UI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icons_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <ImageView
-        android:id="@+id/Icons_2_UI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icons_2"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:text="프로필 수정"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
         />
-
 
     <Button
         android:id="@+id/완료_버튼"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Icons_2_UI"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
         android:text="완료"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="13sp"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="1dp"
         />
 
     <ImageView
@@ -66,7 +63,7 @@
         android:layout_height="wrap_content"
         android:text="닉네임"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Image"
+        app:layout_constraintTop_toBottomOf="@+id/Image"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,15 +71,20 @@
 
     <EditText
         android:id="@+id/input_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintTop_toBottomOf="@id/nickname"
-        android:hint="이름을 입력하세요."
-        android:orientation="vertical"
-        android:ems="10"
         app:layout_constraintStart_toStartOf="@+id/nickname"
-
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="이름을 입력하세요."
+        android:ems="10"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/white_edittext"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

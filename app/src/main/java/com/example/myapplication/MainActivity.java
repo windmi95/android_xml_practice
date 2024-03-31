@@ -14,10 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView timeTextView = findViewById(R.id.time_text_view);
-
-        String formattedDate = SimpleDateFormat.getDateTimeInstance().format(new Date());
-        timeTextView.setText(formattedDate);
 
 
     }
