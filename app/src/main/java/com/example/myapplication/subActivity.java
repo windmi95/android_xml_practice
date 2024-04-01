@@ -16,6 +16,7 @@ public class subActivity extends AppCompatActivity {
         setContentView(R.layout.sub_activity);
 
         TextView view_text;
+        //subActivity.xml 연결
         view_text = findViewById(R.id.tv_text);
 
         Intent intent = getIntent();

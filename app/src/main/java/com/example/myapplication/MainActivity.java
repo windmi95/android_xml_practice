@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EditText nicknameEditText;
+        //activity_main.xml 연결
         nicknameEditText = findViewById(R.id.input_text);
 
 
