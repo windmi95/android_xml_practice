@@ -15,8 +15,12 @@ public class subActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sub_activity);
 
+        TextView view_text;
+        view_text = findViewById(R.id.tv_text);
+
         Intent intent = getIntent();
         String nickname = intent.getStringExtra("nickname");
+        view_text.setText("닉네임: " + nickname+"님 환영합니다.");
 
 
 
