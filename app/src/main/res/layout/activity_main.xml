@@ -43,6 +43,14 @@
         android:textSize="13sp"
         android:importantForAccessibility="no"
         android:layout_marginTop="1dp"
+        android:onClick="onFinishButtonClicked"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.5px"
+        app:layout_constraintBottom_toBottomOf="@+id/완료_버튼"
+        android:background="#D3D3D3"
         />
 
     <ImageView
