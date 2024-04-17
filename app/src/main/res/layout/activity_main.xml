@@ -43,7 +43,6 @@
         android:textSize="13sp"
         android:importantForAccessibility="no"
         android:layout_marginTop="1dp"
-        android:onClick="onFinishButtonClicked"
         />
 
     <View
